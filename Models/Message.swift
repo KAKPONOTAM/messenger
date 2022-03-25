@@ -1,8 +1,16 @@
-//
-//  Message.swift
-//  messenger
-//
-//  Created by Сабитов Данил on 25.03.2022.
-//
-
 import Foundation
+import MessageKit
+
+class Message: MessageType {
+    var sender: SenderType
+    var messageId: String
+    var sentDate: Date
+    var kind: MessageKind
+    
+    init(sender: SenderType, messageId: String, sentDate: Date, kind: MessageKind) {
+        self.sender = sender
+        self.messageId = messageId
+        self.sentDate = sentDate
+        self.kind = kind
+    }
+}

@@ -1,8 +1,12 @@
-//
-//  Sender.swift
-//  messenger
-//
-//  Created by Сабитов Данил on 25.03.2022.
-//
-
 import Foundation
+import MessageKit
+
+class Sender: SenderType {
+    var senderId: String
+    var displayName: String
+    
+    init(senderId: String, displayName: String) {
+        self.senderId = senderId
+        self.displayName = displayName
+    }
+}
