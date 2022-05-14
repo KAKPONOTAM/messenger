@@ -12,14 +12,6 @@ class ChatViewController: MessagesViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    private var messageCollectionView: MessagesCollectionView {
-        let layout = MessagesCollectionViewFlowLayout()
-        layout.minimumLineSpacing = 5
-        let collectionView = MessagesCollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        return collectionView
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -28,9 +20,12 @@ class ChatViewController: MessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = name
+        messageCollectionViewSetup()
     }
     
     private func messageCollectionViewSetup() {
+        messagesCollectionView.delegate = self
+        messagesCollectionView.dataSource = self
     }
     
     //MARK: - methods
