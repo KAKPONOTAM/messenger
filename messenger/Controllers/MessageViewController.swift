@@ -1,6 +1,6 @@
 import UIKit
 
-class MessagesViewController: UIViewController {
+class MessageViewController: UIViewController {
     //MARK: - properties
     private let messagesTableView: UITableView = {
         let tableView = UITableView()

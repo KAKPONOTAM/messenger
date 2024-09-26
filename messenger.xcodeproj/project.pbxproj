@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		63B71BFC809232C429293CB7 /* Pods_messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3195FDD0C708AE9CBE64C482 /* Pods_messenger.framework */; };
 		66134C1627EDC30B00BC9DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66134C1527EDC30B00BC9DEF /* AppDelegate.swift */; };
-		66134C1A27EDC30B00BC9DEF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66134C1927EDC30B00BC9DEF /* MessagesViewController.swift */; };
+		66134C1A27EDC30B00BC9DEF /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66134C1927EDC30B00BC9DEF /* MessageViewController.swift */; };
 		66134C1F27EDC30C00BC9DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66134C1E27EDC30C00BC9DEF /* Assets.xcassets */; };
 		66134C2227EDC30C00BC9DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66134C2027EDC30C00BC9DEF /* LaunchScreen.storyboard */; };
 		66FA047627EDCAAF00722B32 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FA047527EDCAAF00722B32 /* ChatViewController.swift */; };
@@ -22,7 +22,7 @@
 		3195FDD0C708AE9CBE64C482 /* Pods_messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66134C1227EDC30B00BC9DEF /* messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66134C1527EDC30B00BC9DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66134C1927EDC30B00BC9DEF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		66134C1927EDC30B00BC9DEF /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		66134C1E27EDC30C00BC9DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66134C2127EDC30C00BC9DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66134C2327EDC30C00BC9DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		66FA047327EDC6E400722B32 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				66134C1927EDC30B00BC9DEF /* MessagesViewController.swift */,
+				66134C1927EDC30B00BC9DEF /* MessageViewController.swift */,
 				66FA047527EDCAAF00722B32 /* ChatViewController.swift */,
 			);
 			path = Controllers;
@@ -225,7 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FA047927EDCB7400722B32 /* Sender.swift in Sources */,
-				66134C1A27EDC30B00BC9DEF /* MessagesViewController.swift in Sources */,
+				66134C1A27EDC30B00BC9DEF /* MessageViewController.swift in Sources */,
 				66FA047B27EDCBBA00722B32 /* Message.swift in Sources */,
 				66FA047627EDCAAF00722B32 /* ChatViewController.swift in Sources */,
 				66134C1627EDC30B00BC9DEF /* AppDelegate.swift in Sources */,

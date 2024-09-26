@@ -1,6 +1,6 @@
 import UIKit
 import MessageKit
-import MessageUI
+
 
 class ChatViewController: MessagesViewController {
     //MARK: - properties
@@ -31,7 +31,7 @@ class ChatViewController: MessagesViewController {
     //MARK: - methods
 }
 
-extension ChatViewController: MessagesDataSource, MessageLabelDelegate, MessagesDisplayDelegate {
+extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate {
     func currentSender() -> SenderType {
         let sender = SenderType.self
         return sender as! SenderType
